@@ -78,7 +78,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className="navbar-center">
-        <div className="h-[5vw] w-[5vw] max-[600px]:h-[10vw] max-[600px]:w-[10vw] rounded-[50%] bg-cover bg-no-repeat bg-center  bg-[url('src/images/kisan.jpg')]"></div>
+        <div className="h-[5vw] w-[5vw] max-[600px]:h-[10vw] max-[600px]:w-[10vw] rounded-[50%] bg-cover bg-no-repeat bg-center  bg-[url('/public/assets/images/kisan.jpg')]"></div>
       </div>
       <div className="right navbar-end flex gap-[5%] pr-2">
         <div className="max-sm:hidden">
