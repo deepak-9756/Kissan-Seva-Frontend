@@ -25,7 +25,7 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="position-absolute z-30 menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-gray-500 text-white rounded-box w-48"
+            className="position-absolute  menu menu-sm dropdown-content mt-3 z-[30] p-2 shadow bg-gray-500 text-white rounded-box w-48"
           >
             <li>
               <a>Register</a>
