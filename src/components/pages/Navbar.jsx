@@ -25,7 +25,7 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="position-absolute z-10 menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-gray-500 text-white rounded-box w-48"
+            className="position-absolute z-20 menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-gray-500 text-white rounded-box w-48"
           >
             <li>
               <a>Register</a>
@@ -87,10 +87,10 @@ const Navbar = () => {
             <option>Hindi</option>
           </select>
         </div>
-        <div className="max-sm:hidden text-2xl cursor-pointer">
+        <div className="bg-gray-500 rounded-[50%] w-[1.5rem] h-[1.5]  max-sm:hidden text-2xl cursor-pointer">
           <TiAdjustBrightness />
         </div>
-        <div className="text-white cursor-pointer hidden max-sm:block">
+        <div className="text-white  cursor-pointer hidden max-sm:block">
           <CiMenuKebab />
         </div>
       </div>
