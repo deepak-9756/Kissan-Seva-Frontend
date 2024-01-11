@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { CiMenuKebab } from "react-icons/ci";
 import { TiAdjustBrightness } from "react-icons/ti";
-
+import { LiaTimesCircle } from "react-icons/lia";
 const Navbar = () => {
+  const [sineMenu, setSineMenu] = useState(false);
   return (
-    <div className="bg-transparent navbar  bg-base-100 position-fixed">
+    <div className="bg-transparent navbar gap-[.2rem] bg-base-100 position-fixed">
       <div className="navbar-center">
         <div className="h-[5vw] w-[5vw] max-[600px]:h-[10vw] max-[600px]:w-[10vw] rounded-[50%] bg-cover bg-no-repeat bg-center  bg-[url('/public/assets/images/kisan.jpg')]"></div>
       </div>
@@ -89,27 +90,33 @@ const Navbar = () => {
 
       <div className="right navbar-end flex gap-[5%] pr-2">
         <div className="max-sm:hidden">
-          <select className="border rounded-md ">
+          <select className="border rounded-md outline-none">
             <option>English</option>
             <option>Hindi</option>
           </select>
         </div>
-        <div className="menu cursor-pointer  text-lg text-white px-1">
+        <div
+          className=" hover:rounded-lg cursor-pointer bg-transparent border-none 
+        hover:bg-[rgba(190,186,186,0.3)] p-1 px-2 hover:bg-transparent  text-lg text-white h-[2.5rem] "
+        >
           Login
         </div>
         <div className="bg-gray-500 rounded-[50%] w-[1.5rem] h-[1.5]  max-sm:hidden text-2xl cursor-pointer">
           <TiAdjustBrightness />
         </div>
-        <div className="dropdown cursor-pointer hidden max-sm:block">
-          <div tabIndex={0} className="text-white">
-            <CiMenuKebab />
-          </div>
-          <ul
-            tabIndex={0}
-            className="dropdown-content right-0 z-[30]  p-2 shadow bg-base-100 rounded-box w-40"
+
+        <details className="dropdown cursor-pointer hidden max-sm:block">
+          <summary
+            onClick={() => setSineMenu(!sineMenu)}
+            className="hover:shadow hover:bg-[rgba(190,186,186,0.3)] hover:rounded-[50%] bg-transparent btn border-none hover:bg-transparent"
           >
+            <div tabIndex={0} className="text-white text-lg">
+              {sineMenu ? <LiaTimesCircle /> : <CiMenuKebab />}
+            </div>
+          </summary>
+          <ul className="p-2 shadow  dropdown-content z-[30] bg-base-100 right-0 rounded-box w-44">
             <li>
-              <select className="w-[100%] hover:bg-slate-200 outline-nonekis">
+              <select className="w-[100%] hover:bg-slate-200 outline-none">
                 <option>English</option>
                 <option>Hindi</option>
               </select>
@@ -121,7 +128,7 @@ const Navbar = () => {
               </select>
             </li>
           </ul>
-        </div>
+        </details>
       </div>
     </div>
   );
