@@ -1,0 +1,61 @@
+/*------ Settings ------*/
+.container {
+    --color: #a5a5b0;
+    --size: 1.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    font-size: var(--size);
+    user-select: none;
+  }
+  
+  .container .moon {
+    fill: #c9c9c9;
+    position: absolute;
+    animation: keyframes-fill 0.5s;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    padding: 0.1em;
+    border-radius: 1rem;
+  }
+  
+  .container .sun {
+    fill: #ffd700;
+    position: absolute;
+    display: none;
+    animation: keyframes-fill 0.5s;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    padding: 0.1em;
+    border-radius: 1rem;
+  }
+  
+  /* ------ On check event ------ */
+  .container input:checked ~ .moon {
+    display: none;
+  }
+  
+  .container input:checked ~ .sun {
+    display: block;
+  }
+  
+  /* ------ Hide the default checkbox ------ */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* ------ Animation ------ */
+  @keyframes keyframes-fill {
+    0% {
+      transform: rotate(-360deg) scale(0);
+      opacity: 0;
+    }
+  
+    75% {
+      transform: rotate(25deg);
+    }
+}
