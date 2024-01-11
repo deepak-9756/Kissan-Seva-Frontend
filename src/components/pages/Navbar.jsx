@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { CiMenuKebab } from "react-icons/ci";
-import { TiAdjustBrightness } from "react-icons/ti";
+import DarkModeToggle from "/src/components/Partials/DarkModeToggle/DarkModeToggle.jsx"
 import { LiaTimesCircle } from "react-icons/lia";
 const Navbar = () => {
   const [sineMenu, setSineMenu] = useState(false);
@@ -102,7 +102,7 @@ const Navbar = () => {
           Login
         </div>
         <div className="bg-gray-500 rounded-[50%] w-[1.5rem] h-[1.5]  max-sm:hidden text-2xl cursor-pointer">
-          <TiAdjustBrightness />
+          <DarkModeToggle/>
         </div>
 
         <details className="dropdown cursor-pointer hidden max-sm:block">

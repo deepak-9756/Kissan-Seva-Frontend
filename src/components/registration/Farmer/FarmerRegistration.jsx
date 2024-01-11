@@ -2,9 +2,9 @@ import { LiaTimesSolid } from "react-icons/lia";
 
 const FarmerRegistration = () => {
   return (
-    <section className="bg-transparent  dark:bg-gray-900 mt-4 pb-4">
-      <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto  lg:py-0">
-        <div className="w-full relative  bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
+    <section className="bg-transparent dark:bg-gray-900 mt-4 pb-4">
+      <div className="flex   flex-col items-center justify-center mx-auto lg:py-0">
+        <div className="max-[578px]:w-[85%] w-[60%] relative  rounded-lg  shadow dark:border md:mt-0 bg-white  xl:p-0 dark:bg-gray-800 dark:border-gray-700">
           <div className="absolute  text-2xl right-3 top-2">
             <LiaTimesSolid />
           </div>
