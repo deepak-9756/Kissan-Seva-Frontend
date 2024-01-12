@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { CiMenuKebab } from "react-icons/ci";
 import DarkModeToggle from "/src/components/Partials/DarkModeToggle/DarkModeToggle.jsx";
 import { LiaTimesCircle } from "react-icons/lia";
+import { FaRegUser } from "react-icons/fa6";
 const Navbar = () => {
   const [sineMenu, setSineMenu] = useState(false);
   return (
@@ -96,10 +97,10 @@ const Navbar = () => {
           </select>
         </div>
         <div
-          className=" hover:rounded-lg cursor-pointer bg-transparent border-none 
+          className="flex items-center gap-2 hover:rounded-lg cursor-pointer bg-transparent border-none 
         hover:bg-[rgba(190,186,186,0.3)] p-1 px-2 hover:bg-transparent  text-lg text-white h-[2.5rem] "
         >
-          Login
+          <p className="max-[600px]:hidden block">Login</p> <FaRegUser />
         </div>
         <div className="bg-gray-500 rounded-[50%] w-[1.5rem] h-[1.5]  max-sm:hidden text-2xl cursor-pointer">
           <DarkModeToggle />
