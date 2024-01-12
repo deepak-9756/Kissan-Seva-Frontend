@@ -7,7 +7,7 @@ import SliderPanel from "./components/pages/SliderPanel";
 function App() {
   return (
     <>
-      <div className="bg-no-repeat h-screen bg-cover bg-center bg-[url('/public/assets/images/background-image.avif')]">
+      <div className="bg-no-repeat h-screen bg-cover bg-center bg-[url('public/assets/images/banner.jpg')]">
         <Navbar></Navbar>
         <Marquee />
         {/* <FarmerRegistration/> */}
