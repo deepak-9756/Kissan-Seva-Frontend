@@ -57,7 +57,7 @@ function SliderPanel() {
     pauseOnHover: true,
     appendDots: (dots) => (
       <div className="relative">
-        <ul className="absolute bottom-10  right-[44%]">
+        <ul className="absolute bottom-10  right-[40%]">
           <span>{dots}</span>
         </ul>
       </div>
@@ -94,13 +94,13 @@ function SliderPanel() {
   return (
     // ek baat dhyaan rhe ki code jsx m compulsary wrap hoga nahi toh error aygi m dhyan rkhunga
 
-    <div className="mx-7 mt-2 m-auto">
+    <div className="mx-[1%] mt-[1%] m-auto">
       <Slider {...settings}>
         {slider.map((img) => (
-          <div className={`card mt-2 px-1  rounded-xl   shadow-md`}>
+          <div className={`card px-1  rounded-xl   shadow-md`}>
             <figure>
               <img
-                className={`h-[27rem] w-[100%] rounded-xl`}
+                className={`h-[28rem] w-[100%] rounded-xl`}
                 src={img.img}
                 alt="Shoes"
               />

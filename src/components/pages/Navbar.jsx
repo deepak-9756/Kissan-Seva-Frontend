@@ -5,7 +5,7 @@ import { LiaTimesCircle } from "react-icons/lia";
 const Navbar = () => {
   const [sineMenu, setSineMenu] = useState(false);
   return (
-    <div className="bg-transparent navbar gap-[.2rem] bg-base-100 position-fixed">
+    <div className="bg-transparent navbar gap-[.2rem] bg-base-100 fixed ">
       <div className="navbar-center">
         <div className="h-[5vw] w-[5vw] max-[600px]:h-[10vw] max-[600px]:w-[10vw] rounded-[50%] bg-cover bg-no-repeat bg-center  bg-[url('/public/assets/images/kisan.jpg')]"></div>
       </div>
