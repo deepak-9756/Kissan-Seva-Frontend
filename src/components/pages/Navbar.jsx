@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { CiMenuKebab } from "react-icons/ci";
-import DarkModeToggle from "/src/components/Partials/DarkModeToggle/DarkModeToggle.jsx"
+import DarkModeToggle from "/src/components/Partials/DarkModeToggle/DarkModeToggle.jsx";
 import { LiaTimesCircle } from "react-icons/lia";
 const Navbar = () => {
   const [sineMenu, setSineMenu] = useState(false);
@@ -91,6 +91,7 @@ const Navbar = () => {
       <div className="right navbar-end flex gap-[5%] pr-2">
         <div className="max-sm:hidden">
           <select className="border rounded-md outline-none">
+            <option>Choose Language</option>
             <option>English</option>
             <option>Hindi</option>
           </select>
@@ -102,7 +103,7 @@ const Navbar = () => {
           Login
         </div>
         <div className="bg-gray-500 rounded-[50%] w-[1.5rem] h-[1.5]  max-sm:hidden text-2xl cursor-pointer">
-          <DarkModeToggle/>
+          <DarkModeToggle />
         </div>
 
         <details className="dropdown cursor-pointer hidden max-sm:block">
@@ -117,12 +118,14 @@ const Navbar = () => {
           <ul className="p-2 shadow  dropdown-content z-[30] bg-base-100 right-0 rounded-box w-44">
             <li>
               <select className="w-[100%] hover:bg-slate-200 outline-none">
+                <option>Choose Language</option>
                 <option>English</option>
                 <option>Hindi</option>
               </select>
             </li>
             <li className="hover:bg-slate-200">
               <select className="w-[100%] hover:bg-slate-200 outline-none">
+                <option>Choose Theme</option>
                 <option>Light</option>
                 <option>Dark</option>
               </select>
