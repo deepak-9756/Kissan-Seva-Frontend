@@ -94,7 +94,7 @@ function SliderPanel() {
   return (
     // ek baat dhyaan rhe ki code jsx m compulsary wrap hoga nahi toh error aygi m dhyan rkhunga
 
-    <div className="mx-[1%] mt-[1%] m-auto">
+    <div className="mt-[1%] m-auto">
       <Slider {...settings}>
         {slider.map((img) => (
           <div className={`card px-1  rounded-xl   shadow-md`}>

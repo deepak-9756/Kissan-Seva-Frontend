@@ -5,12 +5,12 @@ import { LiaTimesCircle } from "react-icons/lia";
 const Navbar = () => {
   const [sineMenu, setSineMenu] = useState(false);
   return (
-    <div className="bg-transparent navbar gap-[.2rem] bg-base-100 fixed ">
+    <div className="bg-transparent z-[40] navbar gap-[.2rem] bg-base-100 fixed ">
       <div className="navbar-center">
         <div className="h-[5vw] w-[5vw] max-[600px]:h-[10vw] max-[600px]:w-[10vw] rounded-[50%] bg-cover bg-no-repeat bg-center  bg-[url('/public/assets/images/kisan.jpg')]"></div>
       </div>
-      <div className="navbar-start">
-        <div className="position-relative dropdown max-[1027px]:block hidden">
+      <div className="navbar-start relative z-[10]">
+        <div className="relative dropdown max-[1027px]:block  hidden">
           <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -29,7 +29,7 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="position-absolute  menu menu-sm dropdown-content mt-3 z-[30] p-2 shadow bg-gray-500 text-white rounded-box w-48"
+            className="relative z-[20]  menu menu-sm dropdown-content mt-3  p-2 shadow bg-gray-500 text-white rounded-box w-48"
           >
             <li>
               <a>Register</a>
@@ -54,7 +54,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className="z-10 min-[1027px]:block hidden  navbar-center lg:flex">
+        <div className="z-[30] min-[1027px]:block hidden  navbar-center lg:flex">
           <ul className=" menu  menu-horizontal text-lg text-white px-1">
             <li>
               <a>Home</a>
@@ -87,12 +87,12 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-      <div className="right navbar-end flex gap-[5%] pr-2">
+      <div className="right  navbar-end flex gap-[5%] pr-2">
         <div className="max-sm:hidden">
-          <select className="border rounded-md outline-none">
-            <option>Choose Language</option>
-            <option>English</option>
-            <option>Hindi</option>
+          <select className="border bg-transparent text-white rounded-md outline-none">
+            <option className="text-black">Choose Language</option>
+            <option className="text-black">English</option>
+            <option className="text-black">Hindi</option>
           </select>
         </div>
         <div
@@ -114,7 +114,7 @@ const Navbar = () => {
               {sineMenu ? <LiaTimesCircle /> : <CiMenuKebab />}
             </div>
           </summary>
-          <ul className="p-2 shadow  dropdown-content z-[30] bg-base-100 right-0 rounded-box w-44">
+          <ul className="p-2 shadow  dropdown-content z-[60] bg-base-100 right-0 rounded-box w-44">
             <li>
               <select className="w-[100%] hover:bg-slate-200 outline-none">
                 <option>Choose Language</option>
