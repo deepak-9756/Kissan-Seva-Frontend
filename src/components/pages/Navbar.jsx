@@ -87,7 +87,6 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-
       <div className="right navbar-end flex gap-[5%] pr-2">
         <div className="max-sm:hidden">
           <select className="border rounded-md outline-none">
