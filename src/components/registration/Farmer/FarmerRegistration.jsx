@@ -53,13 +53,13 @@ const FarmerRegistration = () => {
               </div>
               <div className=" block mb-2 text-sm font-medium text-gray-900 dark:text-white  ">
                 <label
-                  for="full-name"
+                  for="city"
                   className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                 >
                   City
                 </label>
                 <select
-                  id="countries"
+                  id="city"
                   class="border-solid border-[1px] rounded-lg border-[#cbcbcb] h-11 text-[#9CA3AF] bg-[#F9FAFB] w-[100%] outline-none jCHKuJ3G7rklx_LiAfbf PWreZZgitgAm_Nv4Noh9 T_tFENbpK8DMDNjQRyQa g3OYBOqwXUEW4dRGogkH MxG1ClE4KPrIvlL5_Q5x _Qk4_E9_iLqcHsRZZ4ge XqTQaCRgxrhPloX2lDDg Gzt3yIR6XQkvVjk5M81S ttxtqsLWp2pFRX8yUvWd jCISvWkW5oStPH6Wrb_H _4wtDMQ2AdJOlYvml5sL _t2wg7hRcyKsNN8CSSeU _BIVSYBXQUqEf_ltPrSk _DJ2tfp6E9c_teMKVD3z a0Ed69aMSu0vgf4oysz0 OOJuY9kV1XZH_KV1ElVw FXh9uSTLEhQn4Ek_3flj"
                 >
                   <option selected="">Choose a City</option>
